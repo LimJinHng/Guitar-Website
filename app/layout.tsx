@@ -17,7 +17,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "singaporeguitarteacher | Guitar Lessons in Singapore",
+  title: "Learn Guitar in Singapore | singaporeguitarteacher",
   description:
     "Private guitar lessons in Singapore with Jin — beginner-friendly, all genres, acoustic & electric, home visits available.",
 };
