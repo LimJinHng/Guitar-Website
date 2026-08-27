@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import RainbowHoverText from "@/components/RainbowHoverText";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import heroPortrait from "@/public/images/hero-portrait.jpg";
 
@@ -27,25 +28,38 @@ export default function HomePage() {
       <section className="bg-ink">
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-20 md:grid-cols-2 md:py-28">
           <div>
-            <span className="mb-4 inline-block rounded-full bg-cream/10 px-4 py-1 text-xs font-medium uppercase tracking-widest text-terracotta">
+            <span
+              className="fade-in-up mb-4 inline-block rounded-full bg-cream/10 px-4 py-1 text-xs font-medium uppercase tracking-widest text-terracotta"
+              style={{ animationDelay: "0ms" }}
+            >
               Guitar Teacher · Singapore
             </span>
-            <h1 className="font-serif text-4xl leading-tight text-cream md:text-5xl">
-              Play Guitar With Confidence
+            <h1
+              className="fade-in-up font-serif text-4xl leading-tight text-cream md:text-5xl"
+              style={{ animationDelay: "90ms" }}
+            >
+              <RainbowHoverText text="Play Guitar With Confidence" />
             </h1>
-            <p className="mt-6 max-w-md text-base font-light leading-relaxed text-cream/70">
+            <p
+              className="fade-in-up mt-6 max-w-md text-base font-light leading-relaxed text-cream/70"
+              style={{ animationDelay: "180ms" }}
+            >
               Learn the fundamentals, develop real technique, and start
               expressing yourself through the guitar with clear, practical
               lessons. Turn simple notes into expressive music.
             </p>
-            <div className="mt-8">
+            <div
+              className="fade-in-up mt-8"
+              style={{ animationDelay: "270ms" }}
+            >
               <WhatsAppButton />
             </div>
           </div>
           <Image
             src={heroPortrait}
             alt="Jin playing electric guitar"
-            className="aspect-[3/4] w-48 max-w-full justify-self-center rounded-2xl object-cover sm:w-64 md:w-full md:max-w-sm"
+            className="fade-in-up aspect-[3/4] w-48 max-w-full justify-self-center rounded-2xl object-cover sm:w-64 md:w-full md:max-w-sm"
+            style={{ animationDelay: "150ms" }}
             priority
           />
         </div>
