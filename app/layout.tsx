@@ -16,10 +16,29 @@ const dmSans = DM_Sans({
   weight: ["300", "400", "500"],
 });
 
+const title = "Learn Guitar in Singapore | singaporeguitarteacher";
+const description =
+  "Private guitar lessons in Singapore with Jin — beginner-friendly, all genres, acoustic & electric, home visits available.";
+
 export const metadata: Metadata = {
-  title: "Learn Guitar in Singapore | singaporeguitarteacher",
-  description:
-    "Private guitar lessons in Singapore with Jin — beginner-friendly, all genres, acoustic & electric, home visits available.",
+  metadataBase: new URL("https://singaporeguitarteacher.com"),
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    url: "/",
+    siteName: "singaporeguitarteacher",
+    images: ["/images/hero-portrait.jpg"],
+    locale: "en_SG",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["/images/hero-portrait.jpg"],
+  },
 };
 
 export default function RootLayout({
