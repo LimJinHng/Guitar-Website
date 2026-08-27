@@ -16,7 +16,7 @@ const dmSans = DM_Sans({
   weight: ["300", "400", "500"],
 });
 
-const title = "Learn Guitar in Singapore | singaporeguitarteacher";
+const title = "Singapore Guitar Teacher | Learn Guitar in Singapore";
 const description =
   "Private guitar lessons in Singapore with Jin — beginner-friendly, all genres, acoustic & electric, home visits available.";
 
